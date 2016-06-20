@@ -6,29 +6,14 @@ import org.junit.Test;
 
 public class TestDePrueba {
 
-	
-	@Test
-	public void test1() {
-		Tragamonedas Maquina1 = new Tragamonedas();
-				
-		System.out.println(Maquina1.tambor1.getPosicion() + "-" + Maquina1.tambor2.getPosicion() + "-" + Maquina1.tambor3.getPosicion());
-		
-		Maquina1.activar();
-		
-		System.out.println(Maquina1.tambor1.getPosicion() + "-" + Maquina1.tambor2.getPosicion() + "-" + Maquina1.tambor3.getPosicion());
-		
-		
-		if (Maquina1.entregarPremio())
-			System.out.println("JACKPOT");
-	
-	}
+
 	
 	
 	@Test
 	public void testHastaQueEntregaPremio() {
 		Tragamonedas Maquina1 = new Tragamonedas();
 				
-		System.out.println(Maquina1.tambor1.getPosicion() + "-" + Maquina1.tambor2.getPosicion() + "-" + Maquina1.tambor3.getPosicion());
+		System.out.println("Valor Inincial " + Maquina1.tambor1.getPosicion() + "-" + Maquina1.tambor2.getPosicion() + "-" + Maquina1.tambor3.getPosicion());
 		do{
 		Maquina1.activar();
 		
