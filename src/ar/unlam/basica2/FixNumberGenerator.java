@@ -2,10 +2,10 @@ package ar.unlam.basica2;
 
 public class FixNumberGenerator implements NumberGenerator {
 
-	Integer F;	
+	Integer valorFijo;	
 	
 	public FixNumberGenerator(Integer number){
-		this.F=number;	
+		this.valorFijo=number;	
 	}
 	
 	
@@ -14,7 +14,7 @@ public class FixNumberGenerator implements NumberGenerator {
 	
 	@Override
 	public Integer generate() {
-		return  F;
+		return  valorFijo;
 	}
 
 	/* post: devuelve el número de posición en la que se  

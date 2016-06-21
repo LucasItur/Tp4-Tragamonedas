@@ -1,10 +1,12 @@
 package ar.unlam.basica2;
 
 public class Tragamonedas{
-	 Tambor tambor1 = new Tambor(null);
-	 Tambor tambor2 = new Tambor(null);
-	 Tambor tambor3 = new Tambor(null);
-	
+	 
+	 private NumberGenerator generator = new FixNumberGenerator(1);
+	 protected Tambor tambor1 = new Tambor(generator);
+	 protected Tambor tambor2 = new Tambor(generator);
+	 protected Tambor tambor3 = new Tambor(generator);
+	 
 	//* post: los 3 Tambores del Tragamonedas están 
 	//*  * en la posición 1.  
 

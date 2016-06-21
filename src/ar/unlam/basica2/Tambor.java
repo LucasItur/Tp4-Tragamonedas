@@ -3,10 +3,10 @@ package ar.unlam.basica2;
 public class Tambor {
 	private Integer slot;
 	private NumberGenerator generator = new RandoNumberGenerator();
-	private NumberGenerator fix = new FixNumberGenerator(1);
+	
 	
 	public Tambor(NumberGenerator generator){
-	this.slot=fix.generate();
+	this.slot=generator.generate();
 	}
 	
 	
